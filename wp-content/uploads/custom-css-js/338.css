@@ -25,9 +25,9 @@
 .wpcf7-form textarea {
   width: 100%;
   padding: 12px 15px;
-  border: 2px solid #566AB7;
+  border: 2px solid #ec8066;
   border-radius: 8px;
-  background:#F5EAE3; 
+  background:#FFFFFF; 
   font-size: 15px;
   box-sizing: border-box;
   transition: border-color 0.3s ease;
@@ -37,13 +37,13 @@
 .wpcf7-form input[type="email"]:focus,
 .wpcf7-form select:focus,
 .wpcf7-form textarea:focus {
-  border-color: #0073aa;
+  border-color: #ec8066;
   outline: none;
 }
 
 /* Bouton d’envoi */
 .wpcf7-form input[type="submit"] {
-  background-color: #566AB7;
+  background-color: #ec8066;
   color: white;
   font-size: 16px;
   padding: 12px 25px;
@@ -55,7 +55,7 @@
 }
 
 .wpcf7-form input[type="submit"]:hover {
-  background-color: #005e8a;
+  background-color: #ec8066;
 }
 
 /* Espacement du champ select */

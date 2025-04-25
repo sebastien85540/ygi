@@ -1,0 +1,24 @@
+# Redirection HTTP vers HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# BEGIN WordPress
+# Les directives (lignes) entre « BEGIN WordPress » et « END WordPress » sont générées
+# dynamiquement, et doivent être modifiées uniquement via les filtres WordPress.
+# Toute modification des directives situées entre ces marqueurs sera surchargée.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+RewriteCond %{HTTP_HOST} ^ygi\-solutions\.com\,services\.ygi\.com_ygi\.odns\.fr$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.ygi\-solutions\.com\,services\.ygi\.com_ygi\.odns\.fr$
+RewriteRule ^/?$ "https\:\/\/ygi\.odns\.fr\/" [R=301,L]
+

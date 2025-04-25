@@ -1,0 +1,111 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Container général */
+.wpcf7-form {
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 30px;
+  border-radius: 16px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Labels */
+.wpcf7-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Champs texte, email, select et textarea */
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form select,
+.wpcf7-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #566AB7;
+  border-radius: 8px;
+  background:#F5EAE3; 
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.wpcf7-form input[type="text"]:focus,
+.wpcf7-form input[type="email"]:focus,
+.wpcf7-form select:focus,
+.wpcf7-form textarea:focus {
+  border-color: #0073aa;
+  outline: none;
+}
+
+/* Bouton d’envoi */
+.wpcf7-form input[type="submit"] {
+  background-color: #566AB7;
+  color: white;
+  font-size: 16px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+  background-color: #005e8a;
+}
+
+/* Espacement du champ select */
+.wpcf7-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg fill='%23333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px;
+}
+
+/* Style de la question */
+.faq-question {
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #ddd;
+}
+
+/* Style de la réponse (par défaut cachée) */
+.faq-answer {
+  display: none;
+  padding: 10px 15px;
+  background-color: #fafafa;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* Lorsque l'élément est actif (afficher la réponse) */
+.faq-question.active + .faq-answer {
+  display: block;
+}
+
+.wp-block-navigation-item.current-menu-item > .wp-block-navigation-item__content {
+  color: #D85738 !important;
+}
+
+.strong-view.wpmtst-default .wpmtst-testimonial-inner {
+    border: 0;
+}
+
+.strong-view.wpmtst-default .wpmtst-testimonial {
+    border-radius: 15px;
+}</style>
+<!-- end Simple Custom CSS and JS -->
